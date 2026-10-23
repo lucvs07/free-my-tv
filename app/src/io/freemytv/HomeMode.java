@@ -78,6 +78,10 @@ final class HomeMode {
         // KTC (NextStar; MediaTek)
         "tv.anoki.acr.controller",                                                    // Anoki ACR: watches what's on screen
         "com.mediatek.tv.retaildemo", "com.electronic.manual",                        // store demo, manual
+        // Sony (BRAVIA 4K GB ATV3, MediaTek MT5891, Android TV 9)
+        "com.sony.dtv.sonyselect", "com.sony.dtv.sonyselect.overlay",                 // Sony Select: sponsored apps row
+        "com.sony.dtv.demomode", "com.sony.dtv.demosupport",                          // store demo mode
+        "com.sony.dtv.multiscreendemo",                                               // store demo
     };
 
     /** The voice assistant, only with disable_assistant=true in config.properties (the mic button stops working). */
@@ -136,7 +140,30 @@ final class HomeMode {
         "com.fengmi.projector.imaging", "com.fengmi.platform", "com.fengmi.Autopair", "com.fengmi.fmsettings",
         "com.fengmi.testsuite", "android.autoinstalls.config.fomovie",
         "uk.co.freeview.tifbridge",
-        "uk.co.freeview.mdsclient", "uk.co.freeview.fvpconfigauth"));
+        "uk.co.freeview.mdsclient", "uk.co.freeview.fvpconfigauth",
+        // Sony (BRAVIA 4K GB ATV3, MediaTek MT5891, Android TV 9): live TV, inputs and tuner
+        "com.sony.dtv.tvx", "com.sony.dtv.tvxlauncher.programguide", "com.sony.dtv.tvinput.external",
+        "com.sony.dtv.tvinput.provider", "com.sony.dtv.tvinput.tuner", "com.sony.dtv.tuningconfirmation_nondvb",
+        "com.sony.dtv.broadcasttimezonereceiver", "mtktvapi.agent",
+        // picture, sound, panel temperature and on-screen layers
+        "com.sony.dtv.panelsettings", "com.sony.dtv.audiooutput", "com.sony.dtv.HomeTheatreControl",
+        "com.sony.dtv.videoframeserver", "com.sony.dtv.osdplanevisibilitymanager", "com.sony.dtv.tvpositionscreen",
+        "com.sony.dtv.heatcontrol",
+        // remote, Bluetooth pairing, keys and keyboard
+        "com.sony.dtv.remotepairing", "com.sony.dtv.rcpowerkey", "com.sony.dtv.uinputservice",
+        "com.sony.dtv.remotecontrolsettings", "com.sony.dtv.imeproxy",
+        // system service, settings, setup, updates
+        "com.sony.dtv.sonysystemservice", "com.sony.dtv.settingsprovider", "com.sony.dtv.configsettings",
+        "com.sony.dtv.countrysetting", "com.sony.dtv.networksettings", "com.sony.dtv.quicksetup",
+        "com.sony.dtv.QuickSetupCustomizer", "com.sony.dtv.systemupdate", "com.sony.dtv.provider.modelvariation",
+        "com.sony.dtv.timers", "com.sony.dtv.tvsettingsbroadcast",
+        // service menu and hotel / professional mode
+        "com.sony.dtv.servicemode", "com.sony.dtv.b2b.frameworkextension", "com.sony.dtv.b2b.hotelmode",
+        "com.sony.dtv.b2b.importexport", "com.sony.dtv.b2b.noderuntime.normal", "com.sony.dtv.b2b.noderuntime.privilege",
+        "com.sony.dtv.b2b.prosettings", "com.sony.dtv.b2b.rs232csupport", "com.sony.dtv.b2b.vendorprotocol",
+        "com.sony.dtv.b2b.webappruntimedrm",
+        // MediaTek agents
+        "com.mediatek.agent", "com.mediatek.dmagent"));
 
     /**
      * Android's own pieces: with one of them off, a TV may not start again (a list that took the permission
